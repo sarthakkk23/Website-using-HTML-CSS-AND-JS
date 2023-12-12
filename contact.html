@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us</title>
+  <link rel="stylesheet" href="contact.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-pzjwpeGwM7AEUAd6V4kYz3XRkZ5MEtM9vnij0Xcoy2Y1ycfn3RY7bl3g5um2Pd2x" crossorigin="anonymous">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Vithkuqi&display=swap');
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+    </style>      
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Dancing+Script:wght@600&display=swap');
+    </style>
+</head>
+<body>
+  <div class="background-image-container"></div>
+    <div class="container">
+        <div class="sidebar">
+          <div class="logo">
+            <img src="images/img2.png" alt="Yash Foundation Logo">
+          </div>
+          <h1>Yash Foundation</h1>
+          <h3>Serving The Unserved Ones</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="home.html#image-gallery" id="gallery-link">Gallery</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+          </ul>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdonorbox.org%2Fdonate-us-58"><img src="images/img5.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com"><img src="images/img7.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/yash.foundation/"><img src="images/img6.png" alt="Instagram"></a>
+            <!-- Add more social media icons and links as needed -->
+          </div>
+          <div class="footerside">
+            <p>&copy; 2023 Yash Foundation. All rights reserved.</p>
+          </div>
+        </div>
+  <div class="content">
+    <div id="map-container"></div>
+    <address>Address: C/o Mrs. Vandana S. Dongare, At Post/Village Akhegaon, Shevgaon, Ahmednagar, 414502</address>
+    <form id="volunteer-form">
+      <div class="form-row">
+        <div class="form-column">
+          <label for="fname"></label>
+          <input type="text" id="fname" name="fname" required placeholder="First Name">
+        </div>
+        <div class="form-column">
+          <label for="lname"></label>
+          <input type="text" id="lname" name="lname" required placeholder="Last Name">
+        </div>
+      </div>
+      <label for="email"></label>
+      <input type="email" id="email" name="email" required placeholder="Email">
+      <button type="submit">Submit</button>
+    <p class="mission-text">Mail us at→ <a href="mailto: yashfoundations.2014@gmail.com"> yashfoundations.2014@gmail.com</a></p>
+    <div class="image-text-container">
+      <h1> Yash Foundation </h1>
+      <h3> NGO </h3>
+      <p>&copy; 2023 Yash Foundation. All rights reserved.</p>
+      <div class="box"></div>
+    </div>
+  </div>
+  <script src="contact.js"></script>
+</body>
+</html>

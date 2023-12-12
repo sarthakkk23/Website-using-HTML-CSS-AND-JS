@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<script> 
+  const sidebar = document.querySelector('.sidebar');
+const mainContent = document.querySelector('.main-content');
+sidebar.classList.add('open'); 
+function toggleSidebar() {
+  sidebar.classList.toggle('open');
+}
+
+const backgroundContainer = document.querySelector('.background-image-container');
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY;
+
+  // Adjust the opacity based on scroll position
+  backgroundContainer.style.opacity = 1 - scrollPosition / 500;
+});
+</script>
+<style>
+  body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Abril Fatface', cursive;
+    color: white;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 100%;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    text-align: center; /* Center the image horizontally */
+    margin-bottom: -35px; /* Add some spacing below the image */
+  }
+  
+  .logo img {
+    max-width: 30%; /* Ensure the image doesn't exceed its container */
+  }
+
+  .sidebar h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 0px; /* Add some spacing below the heading */
+    text-align: center;
+  }
+
+  .sidebar h3{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 14px;
+    color: rgb(163, 157, 157);
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 0px;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 15px;
+    align-self: center;
+    border-bottom: 1px solid rgb(70, 68, 68); /* Add a grey border at the bottom of each list item */
+    padding-bottom: 8px;
+  }
+  
+  .sidebar ul li:last-child {
+    border-bottom: none; /* Remove the border from the last list item */
+  }
+  
+  .sidebar ul li a {
+    font-size: 17px;
+    font-family: 'Abril Fatface', cursive;
+    text-decoration: none;
+    color: rgb(163, 157, 157); /* Change the color to your preferred color */
+    font-weight: bold; /* Set the font weight of the links */
+    transition: all 0.3s;
+  }
+
+  .sidebar ul li a:hover {
+    font-size: 18px; /* Increase font size on hover */
+    transform: scale(1.1); /* Enlarge the link on hover */
+  }
+
+  .container {
+    display: flex;
+  }
+  
+  .social-icons {
+    text-align: center;
+    margin-top: 200px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Create circular shape */
+    background-color: grey;
+    margin: 0 10px; /* Add spacing between icons */
+    overflow: hidden; /* Ensure the image fits within the circular shape */
+  }
+  
+  .social-icons img {
+    max-width: 100%; /* Ensure the image fits within the circular shape */
+  }
+
+  .footerside{
+    font-size: 11px;
+    font-family: 'Abril Fatface', cursive;
+    text-decoration: none;
+    color: rgb(163, 157, 157); /* Change the color to your preferred color */
+    text-align: center;
+    margin-left: 2.5rem;
+ }
+  .heading {
+    font-family: 'Abril Fatface', cursive;
+    text-align: center ;
+    font-size: 1.8em;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-top: 20px;
+  }
+  .mission {
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-size: 1.8em; /* Adjust the font size for "Our Mission" */
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin: 20px;
+  }
+  .vision {
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-size: 1.8em; /* Adjust the font size for "Our Vision" */
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin: 20px;
+  }
+  .values {
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-size: 1.8em; /* Adjust the font size for "Our Values" */
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin: 20px;
+  }
+  .whatwedo {
+    text-align: center;
+    font-size: 1.8em; /* Adjust the font size for "What We Do" */
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin: 20px;
+    font-family: 'Abril Fatface', cursive;
+  }
+  .missioncontent,
+  .visioncontent,
+  .valuescontent,
+  .whatwedocontent {
+    
+    font-size: 0.6em; /* Adjust the font size for the content */
+    line-height: 1.5; /* Adjust line height for better readability */
+    margin: 20px; /* Add some margin for spacing */
+    max-width: 800px; /* Add a maximum width to prevent stretching */
+    margin-left: auto; /* Center align the content */
+    margin-right: auto; /* Center align the content */
+    color: grey; /* Change the color to grey */
+  }
+  .valuescontent p b {
+    font-weight: bold; /* Make the specific words bold */
+  }
+</style>
+</head>
+<body>
+  <div class="background-image-container"></div>
+    <div class="container">
+        <div class="sidebar">
+          <div class="logo">
+            <img src="images/img2.png" alt="Yash Foundation Logo">
+          </div>
+          <h1>Yash Foundation</h1>
+          <h3>Serving The Unserved Ones</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#image-gallery" id="gallery-link">Gallery</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+          </ul>
+          <div class="social-icons">
+            <a href="https://www.facebook.com"><img src="images/img5.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com"><img src="images/img7.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/yash.foundation/"><img src="images/img6.png" alt="Instagram"></a>
+            <!-- Add more social media icons and links as needed -->
+          </div>
+          <div class="footerside">
+            <p>&copy; 2023 Yash Foundation. All rights reserved.</p>
+          </div>
+</div> 
+<div class="main-content" style="margin-left: 370px;">
+  <div class="heading">
+    <h1>About Us</h1>
+  </div>
+  <div class="mission">
+    <p>Our Mission</p>
+    <div class="missioncontent">
+      <p>At Yash Foundation, we are dedicated to creating a world where every individual, 
+        regardless of their status or origin, attains the fundamental rights to survival, 
+        protection, development, and participation. We believe in making a positive impact 
+        on the communities where we live and work, fostering a brighter future for all.</p>
+    </div>
+  </div>
+  <div class="vision">
+    <p>Our Vision</p>
+    <div class="visioncontent">
+      <p>Our vision is to build a just and equitable society where every person's potential is realized 
+        and harnessed for the collective good. We aspire to be the catalyst for change, 
+        driving initiatives that uplift lives, empower communities, and drive sustainable progress.</p>
+    </div>
+  </div>
+  <div class="values">
+    <p>Our Values</p>
+    <div class="valuescontent">
+      <p><b>Compassion:</b> We approach our work with empathy and understanding, recognizing the inherent dignity of every human being.</p>
+      <p><b>Collaboration:</b> We believe in the power of partnerships and cooperation, working together to maximize our impact.</p>
+      <p><b>Integrity:</b> We uphold the highest standards of ethics, transparency, and accountability in all our endeavors.</p>
+      <p><b>Innovation:</b> We constantly seek new and creative solutions to address complex challenges and drive positive change.</p>
+      <p><b>Empowerment:</b> We strive to empower individuals and communities, enabling them to take charge of their own development.</p>
+    </div>
+  </div>
+  <div class="whatwedo">
+    <p>What We Do</p>
+    <div class="whatwedocontent">
+      <p>Through our various programs and initiatives, we address critical issues affecting individuals 
+        and communities, including education, healthcare, gender equality, poverty alleviation, and 
+        environmental sustainability. By actively engaging with our beneficiaries, we aim to create sustainable 
+        solutions that create a lasting impact.</p>
+    </div>
+  </div>
+</body>
+</html>
